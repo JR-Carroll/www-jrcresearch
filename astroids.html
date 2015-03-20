@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=0.2">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="./css/matrix.css" type="text/css">
+        <link rel="stylesheet" href="http:////ajax.googleapis.com/ajax/libs/dojo/1.8.3/dijit/themes/claro/claro.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <script type="text/javascript" data-dojo-config="parseOnLoad:false, async:1" src="http://ajax.googleapis.com/ajax/libs/dojo/1.8.3/dojo/dojo.js"></script>
+        <div id="canvas" class="background">
+            <noscript id="advisement">
+                You are trying to view this page when without the aid of JavaScript.
+                Unfortunately, the days of viewing the WWW without JavaScript are over...
+                Like 10 years ago...  you really need to stop being so paranoid or antiquated.
+                Please, reload the page with JavaScript enabled!
+            </noscript>
+            <div class="mapContainer" id="mapContainerID">
+                <div class="mapDetails" id="mapDetailsID">
+                    <span id="chapterTitle">CH-1:  Planet Earth!</span>
+                    <span id="chapterContents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                </div>
+                <div class="mapMenu" id="mapMenuID">
+                    <span id="mapStartGameID">Start Game</span> 
+                    <span id="mapMainMenuID">Black Market</span>
+                </div>
+                <div class="gameMap" id="gameMapID">
+                    <div class="mapTitle" id="mapTitleID">The Hunt for Justin Carroll</div>
+                    <object id="spaceMapData" data="./img/astroids/map.svg"></object>
+                    <!-- <div class="landscape" id="landscapeID"><object id="spaceMapData" data="./img/astroids/earthCityScape.svg"></object></div> -->
+                </div>
+            </div>
+            <div class="topMenuControls">
+                <span class="gameMenuBtn" id="gamePauseBtn">||</span>
+                <div id="scoreCardID" class="scoreCard">SCORE: <span id= "scoreID" class="score"></span></div>
+            </div>
+            <div class="fullPageStetch fullPagePause" id="fullPagePauseID">
+                <div class="gameMenuCenterDiv">
+                    <div class="gameMenu" id="pauseGameMenu">
+                        <div class="pauseMenuItem" id="resumeGameBtn">Resume</div>
+                        <div class="pauseMenuItem" id="storeGameBtn">Black Market</div>
+                        <div class="pauseMenuItem" id="quitGameBtn">Quit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fullPageStetch" id="fullPageStetchID">
+                <div class="countDown" id="countDownID">Game Starts In...  <div id="countValueID">3</div></div>
+            </div>
+            <div id="buyPageID" class="buyPage" style="display: none">
+                <div id="chapterTextID" class="actionChapterText">
+                    ...the discovery!
+                </div>    
+                <div id="buyMenuID" class="buyMenu">
+                    <ul id="menuID" class="menuList">
+                        <li id="resumeGameItemID" class="menuItem">Resume Game</li>
+                        <!-- <li id="continueItemID" class="menuItem">Upgrades</li> -->
+                        <li id="contactItemID" class="menuItem">Contact Mr. Carroll</li>
+                        <li id="quitItemID" class="menuItem">Quit Game</li>
+                    </ul>
+                </div>
+                <div class="storeHeader">
+                    <div class="storeTitle">Blackmarket</div>
+                    <div id="availPtsID" class="availPts">Available Points: <span id="myPoints"></span></div>
+                </div>
+                <div id="storeID" class="store">
+                    <div class="row">
+                        <div id="row1col1" class="itemSquareTop">About<span class="priceTag" id="aboutCost"></span></div>
+                        <div id="row1col2" class="itemSquareTop">Photo<span class="priceTag" id="photoCost"></span></div>
+                        <div id="row1col3" class="itemSquareTop">Resume<span class="priceTag" id="resumeCost"></span></div>
+                        <div id="row1col4" class="itemSquareTop">C.V.<span class="priceTag" id="cvCost"></span></div>
+                    </div>
+                    <div class="row">
+                        <div id="row2col1" class="itemSquareMid">White Papers<span class="priceTag" id="whitePapersCost"></span></div>
+                        <div id="row2col2" class="itemSquareMid">Web/Mobile Applications<span class="priceTag" id="mobAppsCost"></span></div>
+                        <div id="row2col3" class="itemSquareMid">PC Applications<span class="priceTag" id="pcAppsCost"></span></div>
+                        <div id="row2col4" class="itemSquareMid">Et cetra<span class="priceTag" id="etc1Cost"></span></div>
+                    </div>
+                    <div class="row">
+                        <div id="row3col1" class="itemSquareBot">WWW Sites/Biz<span class="priceTag" id="wwwCost"></span></div>
+                        <div id="row3col2" class="itemSquareBot">LLaML<span class="priceTag" id="llamlCost"></span></div>
+                        <div id="row3col3" class="itemSquareBot">Big Data & Data Science<span class="priceTag" id="bigDataCost"></div>
+                        <div id="row3col4" class="itemSquareBot">Et cetra<span class="priceTag" id="etc2Cost"></div>
+                    </div>
+                </div>
+                <div class="blackMarketContent" id="contentPaneID">
+                    <div class="innerContent" id="innerContentID">
+                        <p>No data purchased/displayed No data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayedNo data purchased/displayed</p>
+                    </div>
+                </div>                    
+                <div id="" class="">Leader Board
+                    <div id="" class="">bob 78383</div>
+                </div>
+                <div id="navigation" class="navMenu">
+                    <div id="continue" class="navButton"></div>
+                </div>
+            </div>
+            <script type="text/javascript" src="./matrix.js" defer></script>
+            <script type="text/javascript" src="./js/astroids/astroids.js" defer></script>
+        </div>
+
+        <!-- <div class="content">aefaefaefae</div> -->
+
+        <!--
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>-->
+    </body>
+</html>

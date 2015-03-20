@@ -1,0 +1,175 @@
+{
+	"prices": {
+		"astroids": {
+			"aboutCost": 		8000,
+			"photoCost": 		16000,
+			"resumeCost": 		24000,
+			"cvCost": 			32000,
+			"whitePapersCost": 	8000,
+			"mobAppsCost": 		16000,
+			"pcAppsCost": 		26000,
+			"etc1Cost": 		30000,
+			"wwwCost": 			12000,
+			"llamlCost":		42000,
+			"bigDataCost": 		22000,
+			"etc2Cost":			14000
+		}
+	},
+
+	"blocks": ["row1col1",
+			   "row1col2",
+			   "row1col3",
+			   "row1col4",
+			   "row2col1",
+			   "row2col2",
+			   "row2col3",
+			   "row2col4",
+			   "row3col1",
+			   "row3col2",
+			   "row3col3",
+			   "row3col4"
+			   ],
+
+	"purchaseAbleItems": {
+		"aboutPage": 		{"purchased": false},
+		"photo": 			{"purchased": false},
+		"resume": 			{"purchased": false},
+		"cv": 				{"purchased": false},
+		"whitePapersPage": 	{"purchased": false},
+		"mobileAppsPages": 	{"purchased": false},
+		"pcAppsPage": 		{"purchased": false},
+		"etcPage1": 		{"purchased": false},
+		"wwwSitesPage": 	{"purchased": false},
+		"llamlPage": 		{"purchased": false},
+		"bigDataPage": 		{"purchased": false},
+		"etcPage2": 		{"purchased": false}
+	},
+
+	"levels": {
+		"baseLevel": {
+			"chapterTitle": " ",
+			"chapterSummary": " ",
+			"mobs": {
+				"wave1": {
+					"astroidsLVL_1": 0,
+					"alienLVL_1": 0,
+					"alienLVL_2": 0
+				},
+				"wave2": {
+					"astroidsLVL_1": 0,
+					"alienLVL_1": 0,
+					"astroidsLVL_2": 0,
+					"alienLVL_3": 0
+				}
+			}
+		},
+
+
+		"1": {
+			"chapterTitle": "...the discovery",
+			"chapterSummary": "Welcome Cadet!  To the blah blah blah",
+			"mobs": {
+				"wave1": {
+					"astroidsLVL_1": 15,
+					"alienLVL_1": 3
+				},
+				"wave2": {
+					"astroidsLVL_1": 10,
+					"alienLVL_1": 5,
+					"astroidsLVL_2": 3
+				}
+			}
+		},
+
+		"2": {
+			"chapterTitle": "...the capper.",
+			"chapterSummary": "We got you now sucka!  Blah blah blah",
+			"mobs": {
+				"wave1": {
+					"astroidsLVL_1": 15,
+					"alienLVL_1": 3,
+					"alienLVL_2": 3
+				},
+				"wave2": {
+					"astroidsLVL_1": 10,
+					"alienLVL_1": 2,
+					"astroidsLVL_2": 3,
+					"alienLVL_3": 1
+				}
+			}
+		},
+
+		"3": {
+			"chapterTitle": "...this means war!",
+			"chapterSummary": "We got you now sucka!  Blah blah blah",
+			"mobs": {
+				"wave1": {
+					"astroidsLVL_1": 15,
+					"alienLVL_1": 3,
+					"alienLVL_2": 3
+				},
+				"wave2": {
+					"astroidsLVL_1": 10,
+					"alienLVL_1": 2,
+					"astroidsLVL_2": 3,
+					"alienLVL_3": 1
+				}
+			}
+		},
+
+		"4": {
+			"chapterTitle": "Nah nah!  Can't catch me",
+			"chapterSummary": "Booger!",
+			"mobs": {
+				"wave1": {
+					"astroidsLVL_1": 0,
+					"alienLVL_1": 0,
+					"alienLVL_2": 0
+				},
+				"wave2": {
+					"astroidsLVL_1": 0,
+					"alienLVL_1": 0,
+					"astroidsLVL_2": 0,
+					"alienLVL_3": 0
+				}
+			}
+		},
+
+		"5": {
+			"chapterTitle": "Holy Gaucomoly!",
+			"chapterSummary": "I dont think I spelled gaucomoly correctly...",
+			"mobs": {
+				"wave1": {
+					"astroidsLVL_1": 0,
+					"alienLVL_1": 0,
+					"alienLVL_2": 0
+				},
+				"wave2": {
+					"astroidsLVL_1": 0,
+					"alienLVL_1": 0,
+					"astroidsLVL_2": 0,
+					"alienLVL_3": 0
+				}
+			}
+		},
+
+		"6": {
+			"chapterTitle": "...Planet-X - Why does it always end on Planet-X?",
+			"chapterSummary": "I can't beleive it... it finally ends on Planet-X",
+			"mobs": {
+				"wave1": {
+					"astroidsLVL_1": 0,
+					"alienLVL_1": 0,
+					"alienLVL_2": 0
+				},
+				"wave2": {
+					"astroidsLVL_1": 0,
+					"alienLVL_1": 0,
+					"astroidsLVL_2": 0,
+					"alienLVL_3": 0
+				}
+			}
+		} 
+	}
+
+}

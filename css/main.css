@@ -1,0 +1,670 @@
+@import url(http://fonts.googleapis.com/css?family=Stalinist+One);
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    font-family: "Stalinist One";
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body {
+    background-color: #fff;
+    color: #000;
+    height: 100%;
+    /*text-align: center;*/
+    overflow: hidden;
+    position: relative;
+}
+
+div.content {
+    position: absolute;
+    background-color: #aef;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+div.page {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: red;
+    min-height: 5em;
+    min-width: 24%;
+    display: inline-block;    
+    margin: 2px;   
+}
+
+.scoreCard {
+    min-width: 16em;
+    /* height: 2em; */
+    border: solid black 0.3em;
+    background-color: #FFF;
+    color: black;
+    margin-left: 40px;
+
+}
+
+.topMenuControls {
+    position: absolute;
+    margin: 0 43%;
+    display: inline;
+    padding-top: 10px;
+}
+
+
+.buyPage {
+    width: 100%;
+    /*opacity: 0;*/
+    /*height: 0;*/
+    position: fixed;
+    background-color: rgba(0, 0, 0, 1);
+    /*border: solid white;*/
+}
+
+.store {
+    display: table;
+    height: 30em;
+    width: 50em;
+    border: solid black 1.5em;
+}
+
+.storeHeader {
+    width: 53em;
+    color: #000;
+}
+
+.storeTitle {
+    display: inline-block;
+    background-color: #A6A600;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.availPts {
+    display: inline-block;
+    background-color: #BFBF30;
+    width: 100%;
+    height: 100%;
+}
+
+.actionChapterText {
+    width: 60%;
+    left: -60%;
+    position: relative;
+    background-color: #D52626;
+    font-size: 5em;
+}
+
+.itemSquareTop, .itemSquareMid, .itemSquareBot {
+    width: 25%;
+    display: table-cell;
+    background: url("../../img/astroids/lock.png") no-repeat center;
+    position: relative;
+}
+
+.priceTag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#continue {
+    background: url("../../img/astroids/next.png") no-repeat center;
+    width: 50px;
+    height:50px;
+}
+
+.navMenu {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.countDown {
+    font-size: 3em;
+    color: red;
+    text-shadow: 5px 5px 5px #000;
+    text-align: center;
+    margin: 20% auto;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+#countValueID {
+    font-size: 4em;
+}
+
+#row1col1 {
+    background-color: #AD66D5;
+}
+
+#row1col2 {
+    background-color: #9F3ED5;
+}
+
+#row1col3 {
+    background-color: #7109AA;
+}
+
+#row1col4 {
+    background-color: #5F2580;
+}
+
+#row2col1 {
+    background-color: #FFB273;
+}
+
+#row2col2 {
+    background-color: #FF9640;
+}
+
+#row2col3 {
+    background-color: #EC8128;
+}
+
+#row2col4 {
+    background-color: #BF7130;
+}
+
+#row3col1 {
+    background-color: #5CCCCC;
+}
+
+#row3col2 {
+    background-color: #33CCCC;
+}
+
+#row3col3 {
+    background-color: #009999;
+}
+
+#row3col4 {
+    background-color: #1D7373;
+}
+
+.row {
+    display: table-row;
+    height: 32.33%;
+}
+
+.menuList > li {
+    display: inline;
+    padding: 12px;
+}
+
+.menuList {
+    background-color: #000;
+    margin: 0;
+}
+
+.buyMenu {
+    width: 53em;
+}
+
+.fullPageStetch {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.fullPagePause {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: none;
+    text-align: center;
+}
+
+.gameMenuCenterDiv {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.gameMenu {
+    padding: 1em;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    background-color: #000;
+    margin: auto;
+}
+
+.pauseMenuItem {
+    background-color: #fff;
+    width: 90%;
+    height: 2em;
+    margin: 20px;
+    color: black;
+    text-align: center;
+}
+
+
+.gameMap {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: auto auto;
+    width: 50%;
+    height: 50%;
+    margin: 12.5% auto;
+}
+
+#spaceMapData {
+    width: 100%;
+    height: 130%;
+}
+
+.mapContainer {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    display: table;
+    vertical-align: middle;
+    background-color: #000;
+}
+
+.mapDetails {
+    background-color: #2D5FAF;
+    border: 1em solid #3D3EA1;
+    border-radius: 1.2em;
+    padding: 1%;
+    position: absolute;
+    width: 30em;
+    height: 20%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: left;
+    margin: 13em auto auto 6em;
+    box-shadow: 2px 2px 50px #FFF;
+}
+
+#chapterTitle {
+    font-size: 1.3em;
+    color: #D06518;
+    display: block;
+}
+
+.landscape {
+    width: 80%;
+    height: 25%;
+    position: absolute;
+    bottom: 11%;
+    left: -4%;
+}
+
+.mapMenu {
+    position: absolute;
+    margin: 33em auto auto 6em;
+    width: 15em;
+    background-color: #9121D5;
+    border: solid #341844;
+    border-radius: 2em;
+    text-align: left;
+    padding: 0.8em;
+}
+
+.gameMenuBtn {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 30px;
+    position: fixed;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#gamePauseBtn {
+    word-spacing: 0.3em;
+    font-weight: 2em;
+    color: #000;
+}
+
+.blackMarketContent {
+    top: 10em;
+    right: 0;
+    background: url("../img/astroids/dialogborder.svg") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    overflow-y: auto;
+    position: absolute;
+    width: 50em;
+    height: 25em;
+    padding: 3em 6em 2em 3em;
+    overflow-x: hidden;
+}
+
+.innerContent {
+    max-height: 22em;
+    text-align: justify;
+    overflow-y: overlay;
+    padding: 0 3em 2em 6em;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Site Selection Page
+   ========================================================================== */
+
+.gameSelectPage {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.selectPageContainer {
+    margin: auto;
+    height: 100%;
+}
+
+#left.pageSelect {
+    background: #303DC7;
+    width: 50%;
+    float: left;
+    text-align: center;
+    height: 100%;
+    display: block;
+    /* vertical-align: middle; */
+    padding: 10% 0% 0% 0%;
+}
+
+#right.pageSelect {
+    background: #D93C3C;
+    width: 50%;
+    float: right;
+    text-align: center;
+    height: 100%;
+    display: block;
+    /* vertical-align: middle; */
+    padding: 20% 0% 0% 0%;
+    font-size: 2em;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
